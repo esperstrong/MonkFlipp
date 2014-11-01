@@ -1,0 +1,39 @@
+﻿Build started 2014/11/01 9:05:26.
+     1>Project "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\MonkFlip_vc12x.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Marmalade\7.4\s3e\bin\CL.exe /c /Ic:/marmalade/7.4/modules/iw2d/h /Ic:/marmalade/7.4/modules/iwgx/h /Ic:/marmalade/7.4/modules/iwgl/h /Ic:/marmalade/7.4/modules/iwutil/h /Ic:/marmalade/7.4/modules/third_party/libjpeg/h /Ic:/marmalade/7.4/modules/third_party/zlib/h /Ic:/marmalade/7.4/modules/third_party/libpng/h /Ic:/marmalade/7.4/modules/iwgeom/h /Ic:/marmalade/7.4/modules/iwresmanager/h /Ic:/marmalade/7.4/extensions/pvrtextool/h /Ic:/marmalade/7.4/modules/iwgxfont/h /Ic:/marmalade/7.4/modules/third_party/tiniconv/source /I"c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source" /Ic:/marmalade/7.4/s3e/h /Ic:/marmalade/7.4/s3e/h/ext /Ic:/marmalade/7.4/s3e/h/std /Ic:/marmalade/7.4/s3e/h/std/c++ /Ic:/marmalade/7.4/s3e/h/ext_legacy /Ic:/marmalade/7.4/s3e/h/legacy /I. /ZI /nologo /W3 /WX- /MP /Od /Oy- /X /Gm- /EHsc /RTC1 /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug_MonkFlip_vc12x_x86\\" /Fd"Debug_MonkFlip_vc12x_x86\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt /S3Eproject /J /FI"c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\temp_defines_debug.h" ..\source\Button.cpp
+         Button.cpp
+     1>c:\users\yusuke-sato\desktop\monkflip\source\sprite.h(55): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\yusuke-sato\desktop\monkflip\source\sprite.h(56): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>c:\users\yusuke-sato\desktop\monkflip\source\button.cpp(60): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+       Link:
+         C:\Marmalade\7.4\s3e\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug_MonkFlip_vc12x_x86\MonkFlip.s86" /INCREMENTAL /NOLOGO /LIBPATH:c:/marmalade/7.4/modules/iw2d/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgx/atitools /LIBPATH:c:/marmalade/7.4/modules/iwgx/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgl/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwutil/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/libjpeg/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/zlib/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/libpng/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgeom/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwresmanager/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/iwgxfont/lib/x86 /LIBPATH:c:/marmalade/7.4/modules/third_party/tiniconv/lib/x86 /LIBPATH:c:/marmalade/7.4/s3e/lib/x86 vc6_compat.lib iw2d_d.lib ATI_Compress_MT_VC7.lib iwgx_d.lib iwgl_d.lib iwutil_d.lib jpeg_d.lib z_d.lib png_d.lib iwgeom_d.lib iwresmanager_d.lib iwgxfont_d.lib tiniconv_d.lib s3e_cpp_d.lib s3e_d.lib s3e_api_iwgl.lib /NODEFAULTLIB:libcmt /MANIFEST:NO /DEBUG /PDB:"Debug_MonkFlip_vc12x_x86\MonkFlip.pdb" /SUBSYSTEM:WINDOWS /OPT:NOREF /OPT:NOICF /TLBID:1 /ENTRY:"DllEntryPoint" /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug_MonkFlip_vc12x_x86\MonkFlip.lib" /MACHINE:X86  /include:_IwMain /include:_raise /include:_DllEntryPoint@12 /force:multiple /DLL Debug_MonkFlip_vc12x_x86\Button.obj
+         Debug_MonkFlip_vc12x_x86\Game.obj
+         Debug_MonkFlip_vc12x_x86\Input.obj
+         Debug_MonkFlip_vc12x_x86\Main.obj
+         Debug_MonkFlip_vc12x_x86\PVRTexTool_interface.obj
+         Debug_MonkFlip_vc12x_x86\Screen.obj
+         Debug_MonkFlip_vc12x_x86\Sprite.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+     1>Button.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+     1>LIBCMTD.lib(sscanf.obj) : warning LNK4006: _vsscanf already defined in s3e_d.lib(iwcrt_win32.obj); second definition ignored
+     1>LIBCMTD.lib(strtoq.obj) : warning LNK4006: _strtof already defined in s3e_d.lib(iwcrt_common.obj); second definition ignored
+            Creating library Debug_MonkFlip_vc12x_x86\MonkFlip.lib and object Debug_MonkFlip_vc12x_x86\MonkFlip.exp
+     1>Debug_MonkFlip_vc12x_x86\MonkFlip.s86 : warning LNK4088: image being generated due to /FORCE option; image may not run
+         MonkFlip_vc12x.vcxproj -> c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86
+       PostBuildEvent:
+         echo C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86"
+         chdir /d "c:\marmalade\7.4\s3e\tools"
+         C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86"
+         echo "s3e_plink" -l "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86" 
+         chdir /d "c:\marmalade\7.4\s3e\bin"
+         "s3e_plink" -l "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86" 
+         
+         :VCEnd
+         C:\Marmalade\7.4\s3e\python\python.exe .\process_map.py "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86"
+         "s3e_plink" -l "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\Debug_MonkFlip_vc12x_x86\MonkFlip.s86" 
+     1>Done Building Project "c:\Users\YUSUKE-SATO\Desktop\MonkFlip\build_monkflip_vc12x\MonkFlip_vc12x.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.86

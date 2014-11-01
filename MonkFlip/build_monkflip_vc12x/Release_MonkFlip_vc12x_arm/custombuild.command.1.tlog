@@ -1,0 +1,2 @@
+^C:\USERS\YUSUKE-SATO\DESKTOP\MONKFLIP\MONKFLIP.MKB
+"C:\Marmalade\7.4\s3e\python\python.exe" "C:\Marmalade\7.4\s3e\makefile_builder\mkb.py" "c:/Users/YUSUKE-SATO/Desktop/MonkFlip/MonkFlip.mkb" "--default-buildenv=vc12x" --msvc-project

@@ -1,0 +1,11 @@
+CIwResGroup
+{
+	name "MonkFlip"
+
+	// Graphics
+	"./background.png"
+
+	// Fonts
+	"./trebuchet_12.gxfont"
+
+}

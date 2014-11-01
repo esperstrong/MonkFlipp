@@ -1,0 +1,14 @@
+CIwResGroup
+{
+	name "Calculator"
+
+	// Graphics
+	"./equalsbutton.png"
+	"./button.png"
+	"./background.png"
+	"./screen.png"
+
+	// Fonts
+	"./trebuchet_12.gxfont"
+
+}

@@ -1,0 +1,22 @@
+ResGroupResources:
+	CIwTexture (0x3521f539)
+		"equalsbutton" (0xafdd354c)
+		Size: 25236
+	CIwTexture (0x3521f539)
+		"button" (0xf4ff5d81)
+		Size: 10836
+	CIwTexture (0x3521f539)
+		"background" (0x677e1785)
+		Size: 614436
+	CIwTexture (0x3521f539)
+		"screen" (0x1b5ffd45)
+		Size: 67236
+	ResList 'CIwTexture' pos:41 size:717754
+
+	CIwGxFont (0xa68776be)
+		"trebuchet_12" (0xd2d97c2d)
+		Size: 198453
+	ResList 'CIwGxFont' pos:717795 size:198463
+
+ResGroupResources: Wrote 916221 bytes to CIwResGroup "Calculator"
+

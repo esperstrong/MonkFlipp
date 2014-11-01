@@ -1,0 +1,13 @@
+ResGroupResources:
+	CIwTexture (0x3521f539)
+		"background" (0x677e1785)
+		Size: 614436
+	ResList 'CIwTexture' pos:39 size:614446
+
+	CIwGxFont (0xa68776be)
+		"trebuchet_12" (0xd2d97c2d)
+		Size: 198453
+	ResList 'CIwGxFont' pos:614485 size:198463
+
+ResGroupResources: Wrote 812913 bytes to CIwResGroup "MonkFlip"
+

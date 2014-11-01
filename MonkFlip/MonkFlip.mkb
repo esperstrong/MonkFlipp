@@ -1,0 +1,50 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+subprojects
+{
+	iw2d
+	iwresmanager
+}
+
+includepath
+{
+	./source
+}
+
+files
+{
+	[Source]
+	(source)
+	# Game
+	Main.cpp
+	Main.h
+	Game.cpp
+	Game.h
+	Screen.cpp
+	Screen.h
+	Button.cpp
+	Button.h
+	Input.cpp
+	Input.h
+	Sprite.cpp
+	Sprite.h
+
+	[Data]
+	(data)
+	MonkFlip.group
+}
+
+assets
+{
+	(data)
+
+	(data-ram/data-gles1, data)
+	level1.group.bin
+}
+
+deployments
+{
+}
