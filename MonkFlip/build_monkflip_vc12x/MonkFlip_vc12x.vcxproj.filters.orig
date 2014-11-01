@@ -80,7 +80,7 @@
     <None Include="c:/marmalade/7.4/modules/iwgeom/h/IwGeomVec.h.tpl">
       <Filter>'Marmalade Studio'\iwgeom</Filter>
     </None>
-    <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/MonkFlip.group">
+    <None Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data/MonkFlip.group">
       <Filter>Data</Filter>
     </None>
     <None Include="c:/marmalade/7.4/extensions/pvrtextool/interface/PVRTexTool.defines.txt">
@@ -89,10 +89,10 @@
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/algorithm">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
-    <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/app.config.txt">
+    <None Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data/app.config.txt">
       <Filter></Filter>
     </None>
-    <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/app.icf">
+    <None Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data/app.icf">
       <Filter></Filter>
     </None>
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/bitset">
@@ -335,7 +335,7 @@
     <None Include="c:/marmalade/7.4/modules/third_party/zlib/zlib.mkf">
       <Filter>(zlib)</Filter>
     </None>
-    <CustomBuild Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/MonkFlip.mkb">
+    <CustomBuild Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb">
       <Filter></Filter>
     </CustomBuild>
   </ItemGroup>
@@ -343,13 +343,13 @@
     <ClInclude Include="c:/marmalade/7.4/s3e/h/AirplayVersion.h">
       <Filter>'Marmalade System (S3E)'</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Button.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Button.h">
       <Filter>Source</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Game.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Game.h">
       <Filter>Source</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Input.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Input.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/modules/iw2d/h/Iw2D.h">
@@ -700,7 +700,7 @@
     <ClInclude Include="c:/marmalade/7.4/modules/iwutil/h/IwVariableBitField.h">
       <Filter>'Marmalade Studio'\iwutil</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Main.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Main.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/MarmaladeVersion.h">
@@ -709,10 +709,10 @@
     <ClInclude Include="c:/marmalade/7.4/extensions/pvrtextool/h/PVRTexTool.h">
       <Filter>Extensions\PVRTexTool</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Screen.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Screen.h">
       <Filter>Source</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/source/Sprite.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/source/Sprite.h">
       <Filter>Source</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/std/alloca.h">
@@ -1171,10 +1171,10 @@
     <ClInclude Include="c:/marmalade/7.4/s3e/h/std/syslog.h">
       <Filter>'Marmalade System (S3E)'\stdc headers</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/temp_defines_debug.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/temp_defines_debug.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
-    <ClInclude Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/temp_defines_release.h">
+    <ClInclude Include="c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/temp_defines_release.h">
       <Filter>'generated files'</Filter>
     </ClInclude>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/std/termios.h">
@@ -1254,7 +1254,7 @@
     <ClCompile Include="..\source\Main.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\marmalade\7.4\extensions\pvrtextool\interface\PVRTexTool_interface.cpp">
+    <ClCompile Include="c:\marmalade\7.4\extensions\pvrtextool\interface\PVRTexTool_interface.cpp">
       <Filter>Extensions\PVRTexTool\interface</Filter>
     </ClCompile>
     <ClCompile Include="..\source\Screen.cpp">

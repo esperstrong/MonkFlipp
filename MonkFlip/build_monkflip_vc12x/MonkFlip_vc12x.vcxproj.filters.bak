@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="(libpng)">
@@ -80,6 +80,9 @@
     <None Include="c:/marmalade/7.4/modules/iwgeom/h/IwGeomVec.h.tpl">
       <Filter>'Marmalade Studio'\iwgeom</Filter>
     </None>
+    <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/MonkFlip.group">
+      <Filter>Data</Filter>
+    </None>
     <None Include="c:/marmalade/7.4/extensions/pvrtextool/interface/PVRTexTool.defines.txt">
       <Filter>Extensions\PVRTexTool\interface</Filter>
     </None>
@@ -87,12 +90,10 @@
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
     </None>
     <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/app.config.txt">
-      <Filter>
-      </Filter>
+      <Filter></Filter>
     </None>
     <None Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/app.icf">
-      <Filter>
-      </Filter>
+      <Filter></Filter>
     </None>
     <None Include="c:/marmalade/7.4/s3e/h/std/c++/bitset">
       <Filter>'Marmalade System (S3E)'\stdc headers\c++</Filter>
@@ -334,9 +335,9 @@
     <None Include="c:/marmalade/7.4/modules/third_party/zlib/zlib.mkf">
       <Filter>(zlib)</Filter>
     </None>
-    <None Include="..\data\MonkFlip.group">
-      <Filter>Data</Filter>
-    </None>
+    <CustomBuild Include="c:/Users/YUSUKE-SATO/Desktop/MonkFlip/MonkFlip.mkb">
+      <Filter></Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="c:/marmalade/7.4/s3e/h/AirplayVersion.h">
@@ -1262,8 +1263,5 @@
     <ClCompile Include="..\source\Sprite.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="..\MonkFlip.mkb" />
   </ItemGroup>
 </Project>

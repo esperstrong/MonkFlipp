@@ -4,8 +4,8 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/MonkFlip.mkb', '--default-buildenv=vc12x', '--msvc-project', '--deploy-only']
-mkb = 'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/MonkFlip.mkb'
+cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb', '--deploy-only']
+mkb = 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb'
 mkf = ['c:\\marmalade\\7.4\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.4\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.4\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.4\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.4\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.4\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.4\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.4\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\tiniconv\\tiniconv.mkf']
 
 class DeployConfig(object):
@@ -16,7 +16,7 @@ class DeployConfig(object):
 assets = {}
 
 assets['Default'] = [
-    ('c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data-ram/data-gles1/level1.group.bin,c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/level1.group.bin', 'level1.group.bin', 0),
+    ('c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data-ram/data-gles1/level1.group.bin,c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data/level1.group.bin', 'level1.group.bin', 0),
 ]
 
 ######### DEFAULT CONFIG #############
@@ -29,8 +29,8 @@ class DefaultConfig(DeployConfig):
     caption = 'MonkFlip'
     long_caption = 'MonkFlip'
     version = [0, 0, 1]
-    config = ['c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data/app.icf']
-    data_dir = 'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/data'
+    config = ['c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data/app.icf']
+    data_dir = 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/data'
     iphone_link_lib = []
     osx_ext_dll = ['c:/marmalade/7.4/extensions/pvrtextool/lib/osx/libPVRTexTool.dylib']
     wp81_extra_pri = []
@@ -84,40 +84,40 @@ class DefaultConfig(DeployConfig):
     iphone_link_libs = []
     target = {
          'gcc_x86' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86/MonkFlip.so',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86/MonkFlip.so',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86/MonkFlip.so',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86/MonkFlip.so',
                  },
          'gcc_x86_tizen' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86_tizen/MonkFlip.s86',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86_tizen/MonkFlip.s86',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86_tizen/MonkFlip.s86',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86_tizen/MonkFlip.s86',
                  },
          'firefoxos' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_firefoxos/MonkFlip.js',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_firefoxos/MonkFlip.js',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_firefoxos/MonkFlip.js',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_firefoxos/MonkFlip.js',
                  },
          'mips_gcc' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
                  },
          'arm_gcc' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_arm/MonkFlip.s3e',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_arm/MonkFlip.s3e',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_arm/MonkFlip.s3e',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_arm/MonkFlip.s3e',
                  },
          'mips' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_mips/MonkFlip.so',
                  },
          'gcc_x86_android' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86_android/MonkFlip.so',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86_android/MonkFlip.so',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_gcc_x86_android/MonkFlip.so',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_gcc_x86_android/MonkFlip.so',
                  },
          'arm' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_arm/MonkFlip.s3e',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_arm/MonkFlip.s3e',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_arm/MonkFlip.s3e',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_arm/MonkFlip.s3e',
                  },
          'x86' : {
-                   'debug'   : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_x86/MonkFlip.s86',
-                   'release' : r'c:/Users/YUSUKE-SATO/Desktop/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_x86/MonkFlip.s86',
+                   'debug'   : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Debug_MonkFlip_VC12X_x86/MonkFlip.s86',
+                   'release' : r'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/build_monkflip_vc12x/Release_MonkFlip_VC12X_x86/MonkFlip.s86',
                  },
         }
     arm_arch = ''
