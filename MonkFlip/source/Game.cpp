@@ -18,6 +18,7 @@ CGame g_Game;
 //
 void CGame::Init()
 {
+	scene = Scene_Title;
 
 	// Allocate the sprite manager
 	SpriteManager = new CSpriteManager();
@@ -32,7 +33,7 @@ void CGame::Init()
 	//cloud_image			= Iw2DCreateImageResource("cloud");
 	button_image = Iw2DCreateImageResource("button");
 	//equalsbutton_image = Iw2DCreateImageResource("equalsbutton");
-	screen_image = Iw2DCreateImageResource("screen");
+	//screen_image = Iw2DCreateImageResource("screen");
 
 	// Create the font that is used to display the score
 	Font = Iw2DCreateFontResource("trebuchet_12");
@@ -48,6 +49,14 @@ void CGame::Init()
 	background_sprite->setImage(background_image);
 	background_sprite->setDestSize(screen_width, screen_height);
 	SpriteManager->addSprite(background_sprite);
+
+	// Create background sprite
+	Button* start_button = new Button();
+	start_button->Init();
+	start_button->setPosAngScale(screen_width / 2, screen_height / 2, 0, IW_GEOM_ONE);
+	start_button->setImage(button_image);
+	start_button->setDestSize(100, 50);
+	SpriteManager->addSprite(start_button);
 
 
 }
@@ -91,17 +100,28 @@ void CGame::Update()
 	// Update the games sprite objects
 	SpriteManager->Update();
 
-	// Updaste water drop timer
-	/*WaterDropTimer--;
-	if (WaterDropTimer <= 0)
-	{
-		// Create water drop
-		WaterDropTimer = 10;
-		WaterDrop* drop_sprite = new WaterDrop();
-		drop_sprite->Init();
-		drop_sprite->setImage(water_drop_image);
-		SpriteManager->addSprite(drop_sprite);
-	}*/
+	switch (scene){
+	case Scene_Title:
+		//options to toggle: NumPlayers, NumPiles, LocalRules
+		//also allow for human-style shuffling once certain condition is met
+		break;
+	case Scene_Game:
+		//show piles to draw from, with remaining card numbers
+		//show options button
+		//once 
+		break;
+	case Scene_Options://different options for whether in a game or not
+		//
+		//forfeit game button (removes current player from current game
+		//					hand cards go to trash, turn passes to next player, game is over if only one player left
+		break;
+	case Scene_GameOver:
+		//display winner with most cards, show replay and titlescreen options
+		break;
+	default:
+		break;
+	}
+
 }
 
 void CGame::Draw()
@@ -119,6 +139,10 @@ void CGame::Draw()
 	Iw2DSurfaceShow();
 }
 
+void CGame::setupGame(int numPlayers, int numPiles){
+
+}
+
 /*
 void CGame::updateScore(int amount)
 {
@@ -129,6 +153,7 @@ void CGame::updateScore(int amount)
 */
 void CGame::DrawValues()
 {
+
 	// Set the current font
 	Iw2DSetFont(Font);
 
@@ -138,13 +163,37 @@ void CGame::DrawValues()
 	// Set teh texts colour to black
 	Iw2DSetColour(0xff000000);
 
-	// Draw the score label
-	Iw2DDrawString("Monkflippp", CIwFVec2(25, 40), CIwFVec2(300, 10), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
+	switch (scene){
+	case Scene_Title:
+		//options to toggle: NumPlayers, NumPiles, LocalRules
+		//also allow for human-style shuffling once certain condition is met
 
-	// Convert the score number to text
-	char str[32];
-	snprintf(str, 32, "%d", Score);
+		// Draw the score label
+		Iw2DDrawString("Monkflippp", CIwFVec2(25, 40), CIwFVec2(300, 10), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
+		break;
+	case Scene_Game:
+		//show piles to draw from, with remaining card numbers
+		//show options button
+		//once 
 
-	// Draw the score number
-	//Iw2DDrawString(str, CIwFVec2(25, 70), CIwFVec2(300, 10), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
+		// Convert the score number to text
+		char str[32];
+		snprintf(str, 32, "%d", Score);
+
+		// Draw the score number
+		Iw2DDrawString(str, CIwFVec2(25, 70), CIwFVec2(300, 10), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
+		break;
+	case Scene_Options://different options for whether in a game or not
+		//
+		//forfeit game button (removes current player from current game
+		//					hand cards go to trash, turn passes to next player, game is over if only one player left
+
+		break;
+	case Scene_GameOver:
+		//display winner with most cards, show replay and titlescreen options
+		break;
+	default:
+		break;
+	}
+
 }

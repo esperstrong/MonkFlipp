@@ -1,0 +1,9 @@
+/*
+
+player object
+
+holds array of cards in hand
+
+
+
+*/

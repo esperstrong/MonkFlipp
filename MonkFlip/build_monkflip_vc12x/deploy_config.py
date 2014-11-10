@@ -4,7 +4,7 @@
 # tool during the build process.
 
 config = {}
-cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb', '--deploy-only']
+cmdline = ['C:/Marmalade/7.4/s3e/makefile_builder/mkb.py', 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb', '--default-buildenv=vc12x', '--msvc-project', '--deploy-only']
 mkb = 'c:/Users/YUSUKE-SATO/Documents/GitHub/MonkFlip/MonkFlip/MonkFlip.mkb'
 mkf = ['c:\\marmalade\\7.4\\modules\\iw2d\\iw2d.mkf', 'c:\\marmalade\\7.4\\modules\\iwgx\\iwgx.mkf', 'c:\\marmalade\\7.4\\modules\\iwgl\\iwgl.mkf', 'c:\\marmalade\\7.4\\modules\\iwutil\\iwutil.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libjpeg\\libjpeg.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\libpng\\libpng.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\zlib\\zlib.mkf', 'c:\\marmalade\\7.4\\modules\\iwgeom\\iwgeom.mkf', 'c:\\marmalade\\7.4\\modules\\iwresmanager\\iwresmanager.mkf', 'c:\\marmalade\\7.4\\extensions\\pvrtextool\\pvrtextool.mkf', 'c:\\marmalade\\7.4\\modules\\iwgxfont\\iwgxfont.mkf', 'c:\\marmalade\\7.4\\modules\\third_party\\tiniconv\\tiniconv.mkf']
 

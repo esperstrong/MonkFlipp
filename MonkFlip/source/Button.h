@@ -28,7 +28,7 @@ protected:
 
 public:
 	bool		Pressed;
-	char		Caption;
+	const char*		Caption;
 	//void		setVelocity(int vx, int vy)	{ Velocity.x = vx; Velocity.y = vy; }
 	//void		Destroy()					{ Destroyed = true; }
 	/// Properties End
@@ -40,7 +40,7 @@ public:
 
 	void SetCaption(std::string cap);
 	void Draw();
-	void	Init(char cap);				// Initialise the water drop game object
+	void	Init();				// Initialise the water drop game object
 	bool	Update();			// Update our water drop object
 };
 

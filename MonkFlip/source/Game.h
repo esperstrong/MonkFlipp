@@ -7,12 +7,22 @@
 
 #include "Sprite.h"
 
+#include "Player.h"
+
 enum eSpriteType
 {
 	ST_None, 
 	ST_Screen, 
 	ST_Button,
 	ST_Card
+};
+
+enum scene
+{
+	Scene_Title,
+	Scene_Game,
+	Scene_Options,
+	Scene_GameOver
 };
 
 //
@@ -29,6 +39,9 @@ class CGame
 protected:
 	CSpriteManager*				SpriteManager;					// The sprite manager handles a collection of game sprites
 public:
+	int							scene;
+	Player					    players;
+
 	int							Score;							// Game score
 	CSpriteManager*				getSpriteManager()				{ return SpriteManager; }
 	void						addSprite(CSprite* sprite)		{ SpriteManager->addSprite(sprite); }
@@ -56,6 +69,8 @@ public:
 	void	Release();			// Release the game
 	void	Update();			// Update the game
 	void	Draw();				// Draw the game
+
+	void setupGame(int numPlayers, int numPiles);
 };
 
 extern CGame g_Game;

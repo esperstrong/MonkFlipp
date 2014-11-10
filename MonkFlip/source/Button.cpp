@@ -8,9 +8,9 @@
 using namespace std;
 
 
-void Button::Init(char cap)
+void Button::Init()
 {
-	Caption = cap;
+	Caption = "";
 	Pressed = false;
 	Type = ST_Button;
 	Position.x = 20 + (rand() * (Iw2DGetSurfaceWidth() - 40)) / RAND_MAX;
@@ -56,8 +56,8 @@ bool Button::Update()
 
 void Button::Draw(){
 	CSprite::Draw();
-	string s = string(1,Caption);
-	Iw2DDrawString(s.c_str(), CIwFVec2(Position.x, Position.y), CIwFVec2(Width, Height), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
+	//string s = string(1,Caption);
+	Iw2DDrawString(Caption, CIwFVec2(Position.x, Position.y), CIwFVec2(Width, Height), IW_2D_FONT_ALIGN_LEFT, IW_2D_FONT_ALIGN_TOP);
 }
 
 bool Button::insideButton(int x, int y){

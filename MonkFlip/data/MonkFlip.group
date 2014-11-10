@@ -4,6 +4,7 @@ CIwResGroup
 
 	// Graphics
 	"./background.png"
+	"./button.png"
 
 	// Fonts
 	"./trebuchet_12.gxfont"
